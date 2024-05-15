@@ -19,23 +19,16 @@ while (entrada.ToUpper() != "X")
         case "3": introducir(EnumTipoDivision.Infanteria,
             introducirBlindaje(), introducirCapacidadDestruccion(), introducirCapacidadMovimiento(),
             introducirNombreUnidad(), introducirPotenciaFuego(), introducirPrecio(), introducirVelocidad()); break;
-        case "4": Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}"); break;
-        case "5": Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}"); break;
-        case "6": Console.WriteLine($"Total potencia de fuego del ejército: {coleccion.calcularPotenciaEjercito()}"); break;
-        case "7": Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}"); break;
+        case "4": Console.WriteLine($"Total costo de las divisiones..........: {coleccion.calcularCostesEjercito()}"); break;
+        case "5": Console.WriteLine($"Total blindaje de la división..........: {coleccion.calcularBlindajeEjercito()}"); break;
+        case "6": Console.WriteLine($"Total potencia de fuego del ejército...: {coleccion.calcularPotenciaEjercito()}"); break;
+        case "7": Console.WriteLine($"Total capacidad militar del ejército...: {coleccion.calcularCapacidadMilitarEjercito()}"); break;
         case "8": Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}"); break;
-        case "9": Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}"); break;
+        case "9": Console.WriteLine($"Total número de unidades del ejército..: {coleccion.mostrarNumeroUnidades()}"); break;
         case "10": coleccion.listarUnidades(); break;
 
     }
 }// fin del while
-//Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}");
-//Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}");
-//Console.WriteLine($"Total potencia de fuego del ejército: {coleccion.calcularPotenciaEjercito()}");
-//Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}");
-//Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}");
-//Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}");
-//Console.WriteLine($"Listado de las unidades: {coleccion.listarUnidades}");
 void introducir(EnumTipoDivision tipo, double blindaje, double capacidadDestruccion,
     double capacidadMovimiento, string nombreUnidad, double potenciaFuego, 
     double precio, double velocidad)

@@ -27,8 +27,16 @@
   <Class Name="EjercicioEjercito.Ejercito.ColeccionDivisiones">
     <Position X="7.75" Y="3.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>gAIIACAgAAAAAgAAAAAAQAAAAAAAAIgAAAAAAAAgAAA=</HashCode>
+      <HashCode>gAIIACAgAAAAQgAAAAAAQAAAAAAAAIgAAAQAAAAgAAA=</HashCode>
       <FileName>Ejercito\ColeccionDivisiones.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Validador01">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Validador01.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -44,6 +52,13 @@
     <TypeIdentifier>
       <HashCode>gAIIACAgAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\IColeccionDivisiones.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IValidador">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IValidador.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

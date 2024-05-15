@@ -16,7 +16,6 @@ namespace EjercicioEjercito.Ejercito
         public double precio { get; set; }
         public double capacidadDestruccion { get; set; }
         public double capacidadMovimiento { get; set; }
-        public double resistenciaAtaque { get; set; }
         // FUNCIONES
         public double evaluarCapacidadMilitar()
         {

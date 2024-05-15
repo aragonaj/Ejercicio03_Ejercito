@@ -1,34 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="EjercicioEjercito.Ejercito.Caballeria">
-    <Position X="0.5" Y="3.5" Width="1.75" />
+    <Position X="0.5" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAgAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
       <FileName>Ejercito\Caballeria.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="EjercicioEjercito.Ejercito.Artilleria">
-    <Position X="2.5" Y="3.5" Width="1.75" />
+    <Position X="2.75" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAgAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
       <FileName>Ejercito\Artilleria.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="EjercicioEjercito.Ejercito.Infanteria">
-    <Position X="4.5" Y="3.5" Width="1.75" />
+    <Position X="5" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAgAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
       <FileName>Ejercito\Infanteria.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="EjercicioEjercito.Ejercito.IDivision">
-    <Position X="2.5" Y="0.5" Width="1.75" />
+  <Class Name="EjercicioEjercito.Ejercito.ColeccionDivisiones">
+    <Position X="7.75" Y="3.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAgAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <HashCode>gAIIACAgAAAAAgAAAAAAQAAAAAAAAIgAAAAAAAAgAAA=</HashCode>
+      <FileName>Ejercito\ColeccionDivisiones.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="EjercicioEjercito.Ejercito.IDivision">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
       <FileName>Ejercito\IDivision.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IColeccionDivisiones">
+    <Position X="7.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAIIACAgAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IColeccionDivisiones.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

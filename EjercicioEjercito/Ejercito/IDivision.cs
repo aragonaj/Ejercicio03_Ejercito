@@ -15,7 +15,6 @@ namespace EjercicioEjercito.Ejercito
         double precio { get; set; }
         double capacidadDestruccion { get; set; }
         double capacidadMovimiento { get; set; }
-        double resistenciaAtaque { get; set; }
 
         double evaluarCapacidadMilitar();
     }

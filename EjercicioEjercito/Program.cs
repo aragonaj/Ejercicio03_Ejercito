@@ -18,17 +18,24 @@ while (entrada.ToUpper() != "X")
             introducirNombreUnidad(), introducirPotenciaFuego(), introducirPrecio(), introducirVelocidad()); break;
         case "3": introducir(EnumTipoDivision.Infanteria,
             introducirBlindaje(), introducirCapacidadDestruccion(), introducirCapacidadMovimiento(),
-            introducirNombreUnidad(), introducirPotenciaFuego(), introducirPrecio(), introducirVelocidad()); break; 
+            introducirNombreUnidad(), introducirPotenciaFuego(), introducirPrecio(), introducirVelocidad()); break;
+        case "4": Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}"); break;
+        case "5": Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}"); break;
+        case "6": Console.WriteLine($"Total potencia de fuego del ejército: {coleccion.calcularPotenciaEjercito()}"); break;
+        case "7": Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}"); break;
+        case "8": Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}"); break;
+        case "9": Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}"); break;
+        case "10": coleccion.listarUnidades(); break;
 
     }
 }// fin del while
-Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}");
-Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}");
-Console.WriteLine($"Total potencia de fuego de la división: {coleccion.calcularPotenciaEjercito()}");
-Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}");
-Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}");
-Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}");
-Console.WriteLine($"Listado de las unidades: {coleccion.listarDivisiones}");
+//Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}");
+//Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}");
+//Console.WriteLine($"Total potencia de fuego del ejército: {coleccion.calcularPotenciaEjercito()}");
+//Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}");
+//Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}");
+//Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}");
+//Console.WriteLine($"Listado de las unidades: {coleccion.listarUnidades}");
 void introducir(EnumTipoDivision tipo, double blindaje, double capacidadDestruccion,
     double capacidadMovimiento, string nombreUnidad, double potenciaFuego, 
     double precio, double velocidad)
@@ -82,11 +89,22 @@ double introducirVelocidad()
 }
 string MostrarOpciones()
 {
+    Console.WriteLine("----------------------------------");
     Console.WriteLine("CREACIÓN DE UNA DIVISIÓN: ");
-    Console.WriteLine("1. ARTILLERÍA");
-    Console.WriteLine("2. CABALLERÍA");
-    Console.WriteLine("3. INFANTERÍA");
+    Console.WriteLine("1. ARTILLERÍA....................:");
+    Console.WriteLine("2. CABALLERÍA....................:");
+    Console.WriteLine("3. INFANTERÍA....................:");
+    Console.WriteLine();
+    Console.WriteLine("CONSULTA DE ESTADÍSTICAS: ");
+    Console.WriteLine("4. COSTO TOTAL DE LAS UNIDADES...:");
+    Console.WriteLine("5. BLINDAJE TOTAL................:");
+    Console.WriteLine("6. POTENCIA DE FUEGO TOTAL.......:");
+    Console.WriteLine("7. CAPACIDAD MILITAR DEL EJÉRCITO:");
+    Console.WriteLine("8. CAPACIDAD DE MOVIEMIENTO TOTAL:");
+    Console.WriteLine("9. NÚMERO TOTAL DE UNIDADES......:");
+    Console.WriteLine("10. LISTADO DE UNIDADES..........:");
     Console.WriteLine();
     Console.WriteLine("X Salir");
+    Console.WriteLine("----------------------------------");
     return Console.ReadLine();
 }

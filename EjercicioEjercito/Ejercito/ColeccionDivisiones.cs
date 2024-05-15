@@ -51,12 +51,9 @@ namespace EjercicioEjercito.Ejercito
         {
             return numeroUnidades;
         }
-        public void listarDivisiones()
+        public void listarUnidades()
         {
-            for (var unidad = 0; unidad < divisiones.Count; unidad++)
-            {
-                Console.WriteLine(divisiones[unidad].nombreUnidad);
-            }// fin del for
-        }// fin de listarDivisiones
+            
+        }// fin de listarUnidades
     }// fin de la clase
 }

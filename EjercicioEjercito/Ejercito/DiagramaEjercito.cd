@@ -33,10 +33,18 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="EjercicioEjercito.Ejercito.Validador01">
-    <Position X="11" Y="3.5" Width="1.5" />
+    <Position X="11" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\Validador01.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.FabricaDivisiones01">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Ejercito\FabricaDivisiones01.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -61,5 +69,19 @@
       <FileName>Ejercito\IValidador.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IFabricaDivisiones">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IFabricaDivisiones.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EjercicioEjercito.Ejercito.EnumTipoDivision">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAABAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\EnumTipoDivision.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

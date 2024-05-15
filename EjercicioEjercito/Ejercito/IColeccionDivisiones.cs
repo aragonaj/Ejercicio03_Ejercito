@@ -9,11 +9,12 @@ namespace EjercicioEjercito.Ejercito
     public interface IColeccionDivisiones
     {
         public void Add(IDivision division);
-        void ListarDivisiones();
+        void listarDivisiones();
         double calcularPotenciaEjercito();
         double calcularBlindajeEjercito();
         double calcularCapacidadMovimientoEjercito();
         double calcularCapacidadMilitarEjercito();
         double calcularCostesEjercito();
+        int mostrarNumeroUnidades();
     }
 }

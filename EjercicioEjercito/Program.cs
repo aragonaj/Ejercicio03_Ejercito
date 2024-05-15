@@ -25,6 +25,10 @@ while (entrada.ToUpper() != "X")
 Console.WriteLine($"Total costo de las divisiones: {coleccion.calcularCostesEjercito()}");
 Console.WriteLine($"Total blindaje de la división: {coleccion.calcularBlindajeEjercito()}");
 Console.WriteLine($"Total potencia de fuego de la división: {coleccion.calcularPotenciaEjercito()}");
+Console.WriteLine($"Total capacidad militar del ejército: {coleccion.calcularCapacidadMilitarEjercito()}");
+Console.WriteLine($"Total capacidad movimiento del ejército: {coleccion.calcularCapacidadMovimientoEjercito()}");
+Console.WriteLine($"Total número de unidades del ejército: {coleccion.mostrarNumeroUnidades()}");
+Console.WriteLine($"Listado de las unidades: {coleccion.listarDivisiones}");
 void introducir(EnumTipoDivision tipo, double blindaje, double capacidadDestruccion,
     double capacidadMovimiento, string nombreUnidad, double potenciaFuego, 
     double precio, double velocidad)

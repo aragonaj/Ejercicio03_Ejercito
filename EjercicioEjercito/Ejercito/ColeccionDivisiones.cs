@@ -10,18 +10,22 @@ namespace EjercicioEjercito.Ejercito
     {
         // PROPIEDADES
         List<IDivision> divisiones = new List<IDivision>();
-        int numeroDivisiones = 0;
+        int numeroUnidades = 0;
         double totalPrecioEjercito = 0;
         double totalBlindajeEjercito = 0;
         double totalPotenciaEjercito = 0;
+        double totalCapacidadMilitar = 0;
+        double totalCapacidadMovimiento = 0;
         // FUNCIONES
         public void Add(IDivision division)
         {
             divisiones.Add(division);
-            numeroDivisiones++;
+            numeroUnidades++;
             totalPrecioEjercito += division.precio;
             totalBlindajeEjercito += division.blindaje;
             totalPotenciaEjercito += division.potenciaFuego;
+            totalCapacidadMovimiento += division.capacidadMovimiento;
+            totalCapacidadMilitar += division.evaluarCapacidadMilitar();
         }
         public double calcularBlindajeEjercito()
         {
@@ -29,11 +33,11 @@ namespace EjercicioEjercito.Ejercito
         }
         public double calcularCapacidadMilitarEjercito()
         {
-            throw new NotImplementedException();
+            return totalCapacidadMilitar;
         }
         public double calcularCapacidadMovimientoEjercito()
         {
-            throw new NotImplementedException();
+            return totalCapacidadMovimiento;
         }
         public double calcularCostesEjercito()
         {
@@ -43,12 +47,16 @@ namespace EjercicioEjercito.Ejercito
         {
             return totalPotenciaEjercito;
         }
-        public void ListarDivisiones()
+        public int mostrarNumeroUnidades()
         {
-            foreach (var item in divisiones)
+            return numeroUnidades;
+        }
+        public void listarDivisiones()
+        {
+            for (var unidad = 0; unidad < divisiones.Count; unidad++)
             {
-                Console.WriteLine(item);
-            }// fin del foreach
-        }// fin de ListarDivisiones
+                Console.WriteLine(divisiones[unidad].nombreUnidad);
+            }// fin del for
+        }// fin de listarDivisiones
     }// fin de la clase
 }

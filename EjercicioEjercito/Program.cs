@@ -93,7 +93,7 @@ string MostrarOpciones()
     Console.WriteLine("5. BLINDAJE TOTAL................:");
     Console.WriteLine("6. POTENCIA DE FUEGO TOTAL.......:");
     Console.WriteLine("7. CAPACIDAD MILITAR DEL EJÉRCITO:");
-    Console.WriteLine("8. CAPACIDAD DE MOVIEMIENTO TOTAL:");
+    Console.WriteLine("8. CAPACIDAD DE MOVIMIENTO TOTAL:");
     Console.WriteLine("9. NÚMERO TOTAL DE UNIDADES......:");
     Console.WriteLine("10. LISTADO DE UNIDADES..........:");
     Console.WriteLine();

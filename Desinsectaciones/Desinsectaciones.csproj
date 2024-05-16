@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Ejercito\NewFolder\**" />
-    <EmbeddedResource Remove="Ejercito\NewFolder\**" />
-    <None Remove="Ejercito\NewFolder\**" />
-  </ItemGroup>
-
 </Project>

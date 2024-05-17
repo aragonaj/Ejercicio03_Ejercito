@@ -10,7 +10,7 @@ namespace EjercicioEjercito.Ejercito
     public class Fabrica : IFabrica
     {
         public IValidador validador { get; set; }
-        public IUnidad ingresarUnidad(double blindaje = 0, 
+        public IUnidad ingresarUnidad(
             double capacidadDestrucion = 0, 
             double capacidadMovimiento = 0, 
             double potenciaFuego = 0, 
@@ -18,8 +18,6 @@ namespace EjercicioEjercito.Ejercito
         {
             IUnidad unidad = new Unidad();
             
-            if (blindaje != 0 && unidad != null)
-                unidad.blindaje = blindaje;
             if (capacidadDestrucion != 0 && unidad != null)
                 unidad.capacidadDestruccion = capacidadDestrucion;
             if (capacidadMovimiento != 0 && unidad != null)

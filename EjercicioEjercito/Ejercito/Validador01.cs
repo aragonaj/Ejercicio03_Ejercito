@@ -10,10 +10,9 @@ namespace EjercicioEjercito.Ejercito
     {
         public bool isValid(IUnidad unidad)
         {
-            return (unidad.blindaje > 0 &&
+            return (
                 unidad.capacidadDestruccion > 0 &&
                 unidad.capacidadMovimiento > 0 &&
-                (unidad as Unidad).nombreUnidad != null &&
                 unidad.potenciaFuego > 0 &&
                 unidad.precio > 0 &&
                 unidad.velocidad > 0);

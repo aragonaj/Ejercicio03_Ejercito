@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito
 {
-    public interface IDivision
+    public interface IValidador
     {
-        public void Add(IUnidad unidad);
-        int mostrarNumeroUnidades();
+        bool isValid(IUnidad division);
     }
 }

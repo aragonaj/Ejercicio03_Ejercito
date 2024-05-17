@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito
 {
-    public interface IDivision
+    public interface IMenu
     {
-        public void Add(IUnidad unidad);
-        int mostrarNumeroUnidades();
+        public string MostrarOpciones();
     }
 }

@@ -6,22 +6,28 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito
 {
-    public class Artilleria : IDivision
+    public class Division : IDivision, IUnidad
     {
-        // PROPIEDADES
-        public string nombreUnidad { get; set; }
+        List<IUnidad> division = new();
+        int numeroUnidades = 0;
+
+        // IUnidad
         public double velocidad { get; set; }
         public double blindaje { get; set; }
         public double potenciaFuego { get; set; }
         public double precio { get; set; }
         public double capacidadDestruccion { get; set; }
         public double capacidadMovimiento { get; set; }
-        public double resistenciaAtaque { get; set; }
-        // FUNCIONES
-        public double evaluarCapacidadMilitar()
+
+        // IDivision
+        public void Add(IUnidad unidad)
         {
-            double capacidadMilitar = (potenciaFuego * capacidadMovimiento / 2) / (100 - blindaje);
-            return capacidadMilitar;
-        }// fin de evaluarCapacidadMilitar
-    }
+            division.Add(unidad);
+            numeroUnidades++;
+        }
+        public int mostrarNumeroUnidades()
+        {
+            return numeroUnidades;
+        }
+    }// fin de la clase
 }

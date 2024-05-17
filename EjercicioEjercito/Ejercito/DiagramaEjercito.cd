@@ -1,33 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="EjercicioEjercito.Ejercito.Caballeria">
-    <Position X="0.5" Y="3.25" Width="1.75" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="EjercicioEjercito.Ejercito.Unidad">
+    <Position X="2.5" Y="3.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAEAAgAAAAAAAIIAA=</HashCode>
-      <FileName>Ejercito\Caballeria.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <FileName>Ejercito\Unidad.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EjercicioEjercito.Ejercito.Artilleria">
-    <Position X="2.5" Y="3.25" Width="1.75" />
+  <Class Name="EjercicioEjercito.Ejercito.Division">
+    <Position X="5.5" Y="3.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAEAAgAAAAAAAIIAA=</HashCode>
-      <FileName>Ejercito\Artilleria.cs</FileName>
+      <HashCode>AAIAEAAAAAAAAAAAAAABEAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Division.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EjercicioEjercito.Ejercito.Infanteria">
-    <Position X="4.5" Y="3.25" Width="1.75" />
+  <Class Name="EjercicioEjercito.Ejercito.Validador01">
+    <Position X="8.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAEAAgAAAAAAAIIAA=</HashCode>
-      <FileName>Ejercito\Infanteria.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Validador01.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Fabrica">
+    <Position X="10.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Fabrica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="EjercicioEjercito.Ejercito.IUnidad">
+    <Position X="2.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IUnidad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IValidador">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IValidador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IFabrica">
+    <Position X="10.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IFabrica.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="EjercicioEjercito.Ejercito.IDivision">
-    <Position X="2.5" Y="0.5" Width="1.75" />
+    <Position X="5.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAEAAwAAAAAAAIIAA=</HashCode>
+      <HashCode>AAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\IDivision.cs</FileName>
     </TypeIdentifier>
   </Interface>

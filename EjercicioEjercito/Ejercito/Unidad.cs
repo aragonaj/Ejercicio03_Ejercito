@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito
 {
-    public class Artilleria : IDivision
+    public class Unidad : IUnidad
     {
-        // PROPIEDADES
         public string nombreUnidad { get; set; }
         public double velocidad { get; set; }
         public double blindaje { get; set; }
@@ -16,11 +15,10 @@ namespace EjercicioEjercito.Ejercito
         public double precio { get; set; }
         public double capacidadDestruccion { get; set; }
         public double capacidadMovimiento { get; set; }
-        // FUNCIONES
         public double evaluarCapacidadMilitar()
         {
             double capacidadMilitar = (potenciaFuego * capacidadMovimiento / 2) / (100 - blindaje);
             return capacidadMilitar;
-        }// fin de evaluarCapacidadMilitar
+        }
     }
 }

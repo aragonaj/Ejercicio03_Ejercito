@@ -8,5 +8,6 @@ namespace EjercicioEjercito.Ejercito
 {
     public interface IMenu
     {
+        public string MostrarOpciones();
     }
 }

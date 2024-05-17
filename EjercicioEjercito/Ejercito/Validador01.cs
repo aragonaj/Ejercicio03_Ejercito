@@ -8,15 +8,15 @@ namespace EjercicioEjercito.Ejercito
 {
     public class Validador01 : IValidador
     {
-        public bool isValid(IDivision division)
+        public bool isValid(IUnidad unidad)
         {
-            return (division.blindaje > 0 &&
-                division.capacidadDestruccion > 0 &&
-                division.capacidadMovimiento > 0 &&
-                division.nombreUnidad != null &&
-                division.potenciaFuego > 0 &&
-                division.precio > 0 &&
-                division.velocidad > 0);
+            return (unidad.blindaje > 0 &&
+                unidad.capacidadDestruccion > 0 &&
+                unidad.capacidadMovimiento > 0 &&
+                (unidad as Unidad).nombreUnidad != null &&
+                unidad.potenciaFuego > 0 &&
+                unidad.precio > 0 &&
+                unidad.velocidad > 0);
         }
     }
 }

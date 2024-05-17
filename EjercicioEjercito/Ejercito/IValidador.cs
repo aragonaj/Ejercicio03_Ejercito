@@ -8,6 +8,6 @@ namespace EjercicioEjercito.Ejercito
 {
     public interface IValidador
     {
-        bool isValid(IDivision division);
+        bool isValid(IUnidad division);
     }
 }

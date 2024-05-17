@@ -3,7 +3,7 @@
   <Class Name="Desinsectaciones.JefeEquipo">
     <Position X="6" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>JefeEquipo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -11,7 +11,7 @@
   <Class Name="Desinsectaciones.Peon">
     <Position X="8.75" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Peon.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -19,7 +19,7 @@
   <Class Name="Desinsectaciones.Gerente">
     <Position X="3.25" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Gerente.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -32,10 +32,18 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Desinsectaciones.MenuTrabajadores">
+    <Position X="11.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuTrabajadores.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="Desinsectaciones.ITrabajador">
     <Position X="6" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ITrabajador.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -51,6 +59,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IValidadorTrabajador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Desinsectaciones.IEntradaDatosTrabajador">
+    <Position X="11.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMenuTrabajadores.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="Desinsectaciones.EnumTipoTrabajador">

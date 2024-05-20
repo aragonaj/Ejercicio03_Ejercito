@@ -7,19 +7,45 @@ using System.Threading.Tasks;
 namespace EjercicioEjercito.Ejercito
 {
     // DECORATOR PATTERN
-    public class UnidadDecorador : IUnidad
+    public class superPiloto : IUnidad
     {
-        IUnidad Base;
-        public UnidadDecorador(IUnidad Base)
+        IUnidad unidadSuperPiloto;
+        public superPiloto(IUnidad unidad)
         {
-            this.Base = Base;
-        }// fin del constructor
-        public double velocidad { get => this.Base.velocidad * 1.05; set { } }
+            this.unidadSuperPiloto = unidad;
+        }
+        public double velocidad { get => (this.unidadSuperPiloto.velocidad *10) /100; set { } }
         public double potenciaFuego { get; set; }
         public double precio { get; set; }
         public double capacidadDestruccion { get; set; }
         public double capacidadMovimiento { get; set; }
-    }// fin de la clase
+    }
+    public class movilidadDesierto : IUnidad
+    {
+        IUnidad unidadMovilidadDesierto;
+        public movilidadDesierto(IUnidad unidad)
+        {
+            this.unidadMovilidadDesierto = unidad;
+        }
+        public double velocidad { get; set; }
+        public double potenciaFuego { get; set; }
+        public double precio { get; set; }
+        public double capacidadDestruccion { get; set; }
+        public double capacidadMovimiento { get => (this.unidadMovilidadDesierto.capacidadMovimiento *20) /100; set { } }
+    }
+    public class superBomba : IUnidad
+    {
+        IUnidad unidadSuperBomba;
+        public superBomba(IUnidad unidad)
+        {
+            this.unidadSuperBomba = unidad;
+        }
+        public double velocidad { get; set; }
+        public double potenciaFuego { get => this.unidadSuperBomba.potenciaFuego *10; set { } }
+        public double precio { get; set; }
+        public double capacidadDestruccion { get; set; }
+        public double capacidadMovimiento { get; set; }
+    }
     // Fin del DECORATOR PATTERN
     public class Unidad : IUnidad
     {

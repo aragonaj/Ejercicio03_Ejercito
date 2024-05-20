@@ -15,7 +15,7 @@ namespace EjercicioEjercito.Ejercito
             Console.WriteLine("1. CREAR UNIDAD........................:");
             Console.WriteLine();
             Console.WriteLine("CONSULTA DE ESTADÍSTICAS: ");
-            Console.WriteLine("5. CAPACIDAD MILITAR TOTAL DEL EJÉRCITO:");
+            Console.WriteLine("2. CAPACIDAD MILITAR TOTAL DEL EJÉRCITO:");
             Console.WriteLine();
             Console.WriteLine("X Salir");
             Console.WriteLine("----------------------------------------");

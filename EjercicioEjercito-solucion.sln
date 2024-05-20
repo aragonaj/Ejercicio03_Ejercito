@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioEjercito", "EjercicioEjercito\EjercicioEjercito.csproj", "{913031CB-559F-431F-BCEF-265362A361C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desinsectaciones", "Desinsectaciones\Desinsectaciones.csproj", "{A047868B-2562-4212-AB3E-8B18F0B04ED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desinsectaciones", "Desinsectaciones\Desinsectaciones.csproj", "{A047868B-2562-4212-AB3E-8B18F0B04ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaOrdenadores", "TiendaOrdenadores\TiendaOrdenadores.csproj", "{AAC70EA9-4762-4A51-9B66-85E0664DEE58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A047868B-2562-4212-AB3E-8B18F0B04ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A047868B-2562-4212-AB3E-8B18F0B04ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A047868B-2562-4212-AB3E-8B18F0B04ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC70EA9-4762-4A51-9B66-85E0664DEE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC70EA9-4762-4A51-9B66-85E0664DEE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC70EA9-4762-4A51-9B66-85E0664DEE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC70EA9-4762-4A51-9B66-85E0664DEE58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

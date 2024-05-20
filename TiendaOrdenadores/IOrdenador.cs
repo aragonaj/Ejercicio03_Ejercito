@@ -11,5 +11,6 @@ namespace TiendaOrdenadores
         double Precio { get; set; }
         int RAM { get; set; }
         int AlmacenamientoInterno { get; set; }
+        string mostrarDatos();
     }
 }

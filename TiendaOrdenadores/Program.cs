@@ -11,12 +11,14 @@
 // Precio *2
 
 using TiendaOrdenadores;
-IFabrica fabricaOrdenadores = new Fabrica();
-IOrdenador OrdenadorManolo = new OrdenadorBase();
-IOrdenador OrdenadorAna = new OrdenadorBase();
-IOrdenador OrdenadorLuisa = new OrdenadorBase();
-IOrdenador OrdenadorGeronimo = new OrdenadorBase();
+IOrdenador ordenadorBasico = new OrdenadorBase();
+IOrdenador aumentarRAM = new RAMMaximaDecorador(ordenadorBasico);
+IOrdenador aumentarAlmacenamientoInterno = new DiscoSolidoDecorador(ordenadorBasico);
+IOrdenador aVerSiCuela = new AVerSiCuelaDecorador(ordenadorBasico);
 
-//OrdenadorAna(RAMMaximaDecorador);
-//OrdenadorLuisa(RAMMaximaDecorador, DiscoSolidoDecorador);
-//OrdenadorGeronimo(DiscoSolidoDecorador, AVerSiCuelaDecorador);
+IOrdenador ordenadorLuisa = new RAMMaximaDecorador(new DiscoSolidoDecorador(ordenadorBasico));
+IOrdenador ordenadorGeronimo = new DiscoSolidoDecorador(new AVerSiCuelaDecorador(ordenadorBasico));
+
+Console.WriteLine(ordenadorLuisa.mostrarDatos());
+Console.WriteLine(ordenadorGeronimo.mostrarDatos());
+

@@ -9,36 +9,49 @@ namespace TiendaOrdenadores
     // DECORADORES
     public class RAMMaximaDecorador : IOrdenador
     {
-        IOrdenador _ordenador;
+        IOrdenador OrdenadorBase;
+
         public RAMMaximaDecorador(IOrdenador ordenador)
         {
-            _ordenador = ordenador;
+            OrdenadorBase = ordenador;
         }
-        public double Precio { get => this._ordenador.Precio = 200; set { } }
-        public int RAM { get => this._ordenador.RAM = 100; set {} }
-        public int AlmacenamientoInterno { get; set; }
+        public double Precio { get => this.OrdenadorBase.Precio =200; set { } }
+        public int RAM { get => this.OrdenadorBase.RAM = 100; set {} }
+        public int AlmacenamientoInterno { get; set; } = 100;
+        public string mostrarDatos()
+        {
+            return $"Precio: {this.Precio}, RAM: {this.RAM}, Almacenamiento interno: {this.AlmacenamientoInterno}";
+        }
     }// fin de la clase
     public class DiscoSolidoDecorador : IOrdenador
     {
-        IOrdenador _ordenador;
+        IOrdenador OrdenadorBase;
         public DiscoSolidoDecorador(IOrdenador ordenador)
         {
-            _ordenador = ordenador;
+            OrdenadorBase = ordenador;
         }
-        public double Precio { get => this._ordenador.Precio +100; set { } }
-        public int RAM { get; set; }
-        public int AlmacenamientoInterno { get => this._ordenador.AlmacenamientoInterno *2; set { } }
+        public double Precio { get => this.OrdenadorBase.Precio +100; set { } }
+        public int RAM { get; set; } = 10;
+        public int AlmacenamientoInterno { get => this.OrdenadorBase.AlmacenamientoInterno *2; set { } }
+        public string mostrarDatos()
+        {
+            return $"Precio: {this.Precio}, RAM: {this.RAM}, Almacenamiento interno: {this.AlmacenamientoInterno}";
+        }
     }// Fin de la clase
     public class AVerSiCuelaDecorador : IOrdenador
     {
-        public IOrdenador _ordenador;
+        public IOrdenador OrdenadorBase;
         public AVerSiCuelaDecorador(IOrdenador ordenador)
         {
-            _ordenador = ordenador;
+            OrdenadorBase = ordenador;
         }
-        public double Precio { get => this._ordenador.Precio *2; set { } }
-        public int RAM { get; set; }
-        public int AlmacenamientoInterno { get; set; }
+        public double Precio { get => this.OrdenadorBase.Precio *2; set { } }
+        public int RAM { get; set; } = 10;
+        public int AlmacenamientoInterno { get; set; } = 100;
+        public string mostrarDatos()
+        {
+            return $"Precio: {this.Precio}, RAM: {this.RAM}, Almacenamiento interno: {this.AlmacenamientoInterno}";
+        }
     }
     // Fin de los DECORADORES
     public class OrdenadorBase : IOrdenador
@@ -46,5 +59,9 @@ namespace TiendaOrdenadores
         public double Precio { get; set; } = 100;
         public int RAM { get; set; } = 10;
         public int AlmacenamientoInterno { get; set; } = 100;
+        public string mostrarDatos()
+        {
+            return $"Precio: {Precio}, RAM: {RAM}, Almacenamiento interno: {AlmacenamientoInterno}";
+        }
     }
 }

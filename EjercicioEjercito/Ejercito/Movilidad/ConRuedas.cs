@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioEjercito.Ejercito
+namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class EnReposo : IMovimiento
+    public class ConRuedas : IMovimiento
     {
         public void enMovimiento()
         {
-            Console.WriteLine("0");
+            Console.WriteLine("100");
         }
     }
 }

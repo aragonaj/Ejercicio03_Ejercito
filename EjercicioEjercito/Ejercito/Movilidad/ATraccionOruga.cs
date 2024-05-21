@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioEjercito.Ejercito
+namespace EjercicioEjercito.Ejercito.Movilidad
 {
     public class ATraccionOruga : IMovimiento
     {

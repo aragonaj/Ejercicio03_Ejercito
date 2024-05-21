@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioEjercito.Ejercito
+namespace EjercicioEjercito.Ejercito.Blindaje
 {
-    public class BlindajePesado : IBlindaje
+    public class BlindajeContrachapado : IBlindaje
     {
         public void blindado()
         {
-            Console.WriteLine("20");
+            Console.WriteLine("40");
         }
     }
 }

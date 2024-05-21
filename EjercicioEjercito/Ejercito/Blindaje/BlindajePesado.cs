@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioEjercito.Ejercito
+namespace EjercicioEjercito.Ejercito.Blindaje
 {
-    public class BlindajeContrachapado : IBlindaje
+    public class BlindajePesado : IBlindaje
     {
         public void blindado()
         {

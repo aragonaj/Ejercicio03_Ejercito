@@ -3,7 +3,7 @@
   <Class Name="EjercicioEjercito.Ejercito.Unidad">
     <Position X="0.5" Y="3.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAAAAQAAAAAAEAAwAAAAAAAIAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAwAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\Unidad.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -32,74 +32,74 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EjercicioEjercito.Ejercito.APie">
-    <Position X="9.75" Y="8.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\APie.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EjercicioEjercito.Ejercito.ATraccionOruga">
-    <Position X="12" Y="8.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\ATraccionOruga.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EjercicioEjercito.Ejercito.ConRuedas">
-    <Position X="14.25" Y="8.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\ConRuedas.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EjercicioEjercito.Ejercito.EnReposo">
-    <Position X="7.5" Y="8.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\EnReposo.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EjercicioEjercito.Ejercito.BlindajeContrachapado">
+  <Class Name="EjercicioEjercito.Ejercito.Blindaje.BlindajeContrachapado">
     <Position X="5.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\BlindajeContrachapado.cs</FileName>
+      <FileName>Ejercito\Blindaje\BlindajeContrachapado.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EjercicioEjercito.Ejercito.BlindajeLigero">
+  <Class Name="EjercicioEjercito.Ejercito.Blindaje.BlindajeLigero">
     <Position X="2.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\BlindajeLigero.cs</FileName>
+      <FileName>Ejercito\Blindaje\BlindajeLigero.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EjercicioEjercito.Ejercito.BlindajePesado">
-    <Position X="4" Y="8.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\BlindajePesado.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EjercicioEjercito.Ejercito.NoBlindado">
+  <Class Name="EjercicioEjercito.Ejercito.Blindaje.NoBlindado">
     <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\NoBlindado.cs</FileName>
+      <FileName>Ejercito\Blindaje\NoBlindado.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Blindaje.BlindajePesado">
+    <Position X="4" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Blindaje\BlindajePesado.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Movilidad.APie">
+    <Position X="9.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Movilidad\APie.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Movilidad.EnReposo">
+    <Position X="7.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Movilidad\EnReposo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Movilidad.ATraccionOruga">
+    <Position X="11" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Movilidad\ATraccionOruga.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Movilidad.ConRuedas">
+    <Position X="12.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Movilidad\ConRuedas.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="EjercicioEjercito.Ejercito.IUnidad">
     <Position X="0.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAACABAAAAQAAAAAAEAAgAAAAAAAIAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAACABAAAAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\IUnidad.cs</FileName>
     </TypeIdentifier>
   </Interface>

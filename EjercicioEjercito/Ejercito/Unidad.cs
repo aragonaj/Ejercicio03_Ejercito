@@ -40,8 +40,6 @@ namespace EjercicioEjercito.Ejercito
         {
             this.unidadSuperBomba = unidad;
         }
-        public IBlindaje blindaje { get; set; }
-        public IMovimiento movimiento { get; set; }
         public double velocidad { get; set; }
         public double potenciaFuego { get => this.unidadSuperBomba.potenciaFuego *10; set { } }
         public double precio { get; set; }

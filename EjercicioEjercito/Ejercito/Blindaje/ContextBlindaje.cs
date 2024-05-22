@@ -10,9 +10,9 @@ namespace EjercicioEjercito.Ejercito.Blindaje
     {
         public IBlindaje blindaje { get; set; }
 
-        public void Contexto(IBlindaje blindaje)
+        public IBlindaje EstablecerBlindaje(IBlindaje blindaje)
         {
-            this.blindaje = blindaje;
+            return this.blindaje = blindaje;
         }
 
         public void Ejecutar()

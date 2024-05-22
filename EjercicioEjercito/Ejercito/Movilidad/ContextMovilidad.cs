@@ -10,11 +10,10 @@ namespace EjercicioEjercito.Ejercito.Movilidad
     {
         public IMovilidad movilidad { get; set; }
 
-        public void Contexto(IMovilidad movilidad)
+        public IMovilidad EstablecerMovilidad(IMovilidad movilidad)
         {
-            this.movilidad = movilidad;
+            return this.movilidad = movilidad;
         }
-
         public void Ejecutar()
         {
             this.movilidad.enMovimiento();

@@ -9,7 +9,7 @@ namespace EjercicioEjercito.Ejercito.Blindaje
     public interface IContextBlindaje
     {
         public IBlindaje blindaje { get; set; }
-        public void Contexto(IBlindaje blindaje);
+        public IBlindaje EstablecerBlindaje(IBlindaje blindaje);
         public void Ejecutar();
     }
 }

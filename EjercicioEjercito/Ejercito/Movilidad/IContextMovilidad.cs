@@ -9,7 +9,7 @@ namespace EjercicioEjercito.Ejercito.Movilidad
     public interface IContextMovilidad
     {
         public IMovilidad movilidad { get; set; }
-        public void Contexto(IMovilidad movilidad);
+        public IMovilidad EstablecerMovilidad(IMovilidad movilidad);
         public void Ejecutar();
     }
 }

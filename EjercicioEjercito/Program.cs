@@ -11,12 +11,17 @@ IBlindaje noBlindado = new NoBlindado();
 IBlindaje blindajeLigero = new BlindajeLigero();
 IBlindaje blindajePesado = new BlindajePesado();
 IBlindaje blindajeContrachapado = new BlindajeContrachapado();
-//IContextBlindaje contextNoBlindado = new ContextBlindaje(new NoBlindado());
-//IContextBlindaje contextBlindajeLigero = new ContextBlindaje(blindajeLigero);
-//IContextBlindaje contextBlindajePesado = new ContextBlindaje(blindajePesado);
-//IContextBlindaje contextBlindajeContrachapado = new ContextBlindaje(blindajeContrachapado);
+IContextBlindaje contextBlindaje = new ContextBlindaje();
+contextBlindaje.EstablecerBlindaje(blindajeLigero);
+contextBlindaje.Ejecutar();
 // MOVILIDAD
-IMovilidad movilidad = new EnReposo();
+IMovilidad enReposo = new EnReposo();
+IMovilidad aPie = new APie();
+IMovilidad aTraccionOruga = new ATraccionOruga();
+IMovilidad conRuedas = new ConRuedas();
+IContextMovilidad contextMovilidad = new ContextMovilidad();
+contextMovilidad.EstablecerMovilidad(aPie);
+contextMovilidad.Ejecutar();
 
 fabrica.validador = validador;
 var entrada = "";
@@ -26,11 +31,12 @@ while (entrada.ToUpper() != "X")
     entrada = menu.MostrarOpciones();
     switch (entrada)
     {
-        case "1": introducir(
-            introducirCapacidadDestruccion(), 
+        case "1":
+            introducir(
+            introducirCapacidadDestruccion(),
             introducirCapacidadMovimiento(),
-            introducirPotenciaFuego(), 
-            introducirPrecio(), 
+            introducirPotenciaFuego(),
+            introducirPrecio(),
             introducirVelocidad());
             break;
     }// fin del switch

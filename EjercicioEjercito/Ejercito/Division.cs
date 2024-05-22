@@ -12,8 +12,6 @@ namespace EjercicioEjercito.Ejercito
         int numeroUnidades = 0;
 
         // IUnidad
-        public IBlindaje blindaje { get; set; }
-        public IMovimiento movimiento { get; set; }
         public double velocidad { get; set; }
         public double potenciaFuego { get; set; }
         public double precio { get; set; }

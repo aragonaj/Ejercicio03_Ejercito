@@ -11,7 +11,7 @@
   <Class Name="EjercicioEjercito.Ejercito.Division">
     <Position X="3.25" Y="3.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAIgEAAAAAAAAACABAABEQAAAAAAEAAgAAAAAAAIAAA=</HashCode>
+      <HashCode>AAIgEAAAAAAAAACABAABEAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
       <FileName>Ejercito\Division.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -96,6 +96,30 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Blindaje.ContextBlindaje">
+    <Position X="10.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAQ=</HashCode>
+      <FileName>Ejercito\Blindaje\ContextBlindaje.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Movilidad.ContextMovilidad">
+    <Position X="12.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ejercito\Movilidad\ContextMovilidad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EjercicioEjercito.Ejercito.Menu">
+    <Position X="10.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\Menu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="EjercicioEjercito.Ejercito.IUnidad">
     <Position X="0.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
@@ -124,18 +148,39 @@
       <FileName>Ejercito\IDivision.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="EjercicioEjercito.Ejercito.IBlindaje">
-    <Position X="0.5" Y="6.75" Width="2" />
+  <Interface Name="EjercicioEjercito.Ejercito.Blindaje.IBlindaje">
+    <Position X="0.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\IBlindaje.cs</FileName>
+      <FileName>Ejercito\Blindaje\IBlindaje.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="EjercicioEjercito.Ejercito.IMovimiento">
-    <Position X="7.5" Y="6.75" Width="2" />
+  <Interface Name="EjercicioEjercito.Ejercito.Movilidad.IMovilidad">
+    <Position X="7.5" Y="6.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ejercito\IMovimiento.cs</FileName>
+      <FileName>Ejercito\Movilidad\IMovilidad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.Blindaje.IContextBlindaje">
+    <Position X="10.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAQ=</HashCode>
+      <FileName>Ejercito\Blindaje\IContextBlindaje.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.Movilidad.IContextMovilidad">
+    <Position X="12.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ejercito\Movilidad\IContextMovilidad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EjercicioEjercito.Ejercito.IMenu">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ejercito\IMenu.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

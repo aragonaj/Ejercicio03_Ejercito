@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class ATraccionOruga : IMovimiento
+    public class ATraccionOruga : IMovilidad
     {
         public void enMovimiento()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class APie : IMovimiento
+    public class APie : IMovilidad
     {
         public void enMovimiento()
         {

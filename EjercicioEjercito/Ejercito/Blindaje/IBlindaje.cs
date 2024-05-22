@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Blindaje
 {
-    internal interface IBlindaje
+    public interface IBlindaje
     {
-        public int blindado();
+        public void blindado();
     }
 }

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class APie : IMovilidad
+    public interface IContextMovilidad
     {
-        public void enMovimiento()
-        {
-            Console.WriteLine("5");
-        }
+        public IMovilidad movilidad { get; set; }
+        public void Contexto(IMovilidad movilidad);
+        public void Ejecutar();
     }
 }

@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito
 {
-    public interface IMovimiento
+    public interface IContextMovimiento
     {
-        // en reposo, a pie, tracción oruga, movimiento con ruedas
-        public void enMovimiento();
     }
 }

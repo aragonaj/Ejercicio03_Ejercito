@@ -1,9 +1,23 @@
 ﻿using EjercicioEjercito.Ejercito;
+using EjercicioEjercito.Ejercito.Blindaje;
+using EjercicioEjercito.Ejercito.Movilidad;
 
 IValidador validador = new Validador01();
 IFabrica fabrica = new Fabrica();
 IDivision division = new Division();
 IMenu menu = new Menu();
+// BLINDAJE
+IBlindaje noBlindado = new NoBlindado();
+IBlindaje blindajeLigero = new BlindajeLigero();
+IBlindaje blindajePesado = new BlindajePesado();
+IBlindaje blindajeContrachapado = new BlindajeContrachapado();
+//IContextBlindaje contextNoBlindado = new ContextBlindaje(new NoBlindado());
+//IContextBlindaje contextBlindajeLigero = new ContextBlindaje(blindajeLigero);
+//IContextBlindaje contextBlindajePesado = new ContextBlindaje(blindajePesado);
+//IContextBlindaje contextBlindajeContrachapado = new ContextBlindaje(blindajeContrachapado);
+// MOVILIDAD
+IMovilidad movilidad = new EnReposo();
+
 fabrica.validador = validador;
 var entrada = "";
 

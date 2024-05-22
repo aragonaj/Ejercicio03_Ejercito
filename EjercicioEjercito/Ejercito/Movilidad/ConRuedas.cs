@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class ConRuedas : IMovimiento
+    public class ConRuedas : IMovilidad
     {
         public void enMovimiento()
         {

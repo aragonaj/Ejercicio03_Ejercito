@@ -15,9 +15,9 @@ namespace EjercicioEjercito.Ejercito.Blindaje
             return this.blindaje = blindaje;
         }
 
-        public void Ejecutar()
+        public string Ejecutar()
         {
-            this.blindaje.blindado();
+            return this.blindaje.blindado();
         }
     }
 }

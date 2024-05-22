@@ -8,6 +8,6 @@ namespace EjercicioEjercito.Ejercito.Blindaje
 {
     public interface IBlindaje
     {
-        public void blindado();
+        public string blindado();
     }
 }

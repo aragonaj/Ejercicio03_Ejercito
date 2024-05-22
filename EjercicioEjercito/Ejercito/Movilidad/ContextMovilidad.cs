@@ -14,9 +14,9 @@ namespace EjercicioEjercito.Ejercito.Movilidad
         {
             return this.movilidad = movilidad;
         }
-        public void Ejecutar()
+        public string Ejecutar()
         {
-            this.movilidad.enMovimiento();
+            return this.movilidad.enMovimiento();
         }
     }
 }

@@ -8,9 +8,10 @@ namespace EjercicioEjercito.Ejercito.Movilidad
 {
     public class APie : IMovilidad
     {
-        public void enMovimiento()
+        public string enMovimiento()
         {
-            Console.WriteLine("5");
+            //Console.WriteLine("5");
+            return "5";
         }
     }
 }

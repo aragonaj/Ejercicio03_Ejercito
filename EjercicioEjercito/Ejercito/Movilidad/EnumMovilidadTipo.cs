@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Movilidad
 {
-    public class EnReposo : IMovilidad
+    public enum EnumMovilidadTipo
     {
-        public string enMovimiento()
-        {
-            //Console.WriteLine("0");
-            return "0";
-        }
+        EnReposo,
+        APie,
+        ATraccionOruga,
+        ConRuedas
     }
 }

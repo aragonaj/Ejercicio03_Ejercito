@@ -8,9 +8,10 @@ namespace EjercicioEjercito.Ejercito.Movilidad
 {
     public class ConRuedas : IMovilidad
     {
-        public void enMovimiento()
+        public string enMovimiento()
         {
-            Console.WriteLine("100");
+            //Console.WriteLine("100");
+            return "100";
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EjercicioEjercito.Ejercito.Blindaje;
+using EjercicioEjercito.Ejercito.Movilidad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,13 +13,22 @@ namespace EjercicioEjercito.Ejercito
     {
         public IValidador validador { get; set; }
         public IUnidad ingresarUnidad(
+            EnumBlindajeTipo blindajeTipo, 
+            EnumMovilidadTipo movilidadTipo, 
             double capacidadDestrucion = 0, 
             double capacidadMovimiento = 0, 
             double potenciaFuego = 0, 
-            double precio = 0, double velocidad = 0)
+            double precio = 0, 
+            double velocidad = 0)
         {
             IUnidad unidad = new Unidad();
-            
+            switch (blindajeTipo){
+
+            }
+            switch (movilidadTipo)
+            {
+
+            }
             if (capacidadDestrucion != 0 && unidad != null)
                 unidad.capacidadDestruccion = capacidadDestrucion;
             if (capacidadMovimiento != 0 && unidad != null)

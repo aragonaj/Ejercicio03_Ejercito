@@ -8,9 +8,10 @@ namespace EjercicioEjercito.Ejercito.Blindaje
 {
     public class BlindajePesado : IBlindaje
     {
-        public void blindado()
+        public string blindado()
         {
-            Console.WriteLine("40");
+            //Console.WriteLine("40");
+            return "20";
         }
     }
 }

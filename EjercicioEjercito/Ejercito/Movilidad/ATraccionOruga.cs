@@ -8,9 +8,10 @@ namespace EjercicioEjercito.Ejercito.Movilidad
 {
     public class ATraccionOruga : IMovilidad
     {
-        public void enMovimiento()
+        public string enMovimiento()
         {
-            Console.WriteLine("64");
+            //Console.WriteLine("64");
+            return "64";
         }
     }
 }

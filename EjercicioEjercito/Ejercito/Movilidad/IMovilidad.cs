@@ -8,6 +8,6 @@ namespace EjercicioEjercito.Ejercito.Movilidad
 {
     public interface IMovilidad
     {
-        public void enMovimiento();
+        public string enMovimiento();
     }
 }

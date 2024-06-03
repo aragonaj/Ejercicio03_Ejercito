@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace EjercicioEjercito.Ejercito.Blindaje
 {
-    public class NoBlindado : IBlindaje
+    public enum EnumBlindajeTipo
     {
-        public string blindado()
-        {
-            //Console.WriteLine("0");
-            return "0";
-        }
+        NoBlindaje,
+        BlindajeLigero,
+        BlindajePesado,
+        BlindajeContrachapado
     }
 }

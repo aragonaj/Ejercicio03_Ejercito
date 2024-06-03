@@ -10,6 +10,6 @@ namespace EjercicioEjercito.Ejercito.Movilidad
     {
         public IMovilidad movilidad { get; set; }
         public IMovilidad EstablecerMovilidad(IMovilidad movilidad);
-        public void Ejecutar();
+        public string Ejecutar();
     }
 }

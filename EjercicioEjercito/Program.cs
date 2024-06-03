@@ -6,33 +6,20 @@ IValidador validador = new Validador01();
 IFabrica fabrica = new Fabrica();
 IDivision division = new Division();
 IMenu menu = new Menu();
-// BLINDAJE
-IBlindaje noBlindado = new NoBlindado();
-IBlindaje blindajeLigero = new BlindajeLigero();
-IBlindaje blindajePesado = new BlindajePesado();
-IBlindaje blindajeContrachapado = new BlindajeContrachapado();
-IContextBlindaje contextBlindaje = new ContextBlindaje();
-contextBlindaje.EstablecerBlindaje(blindajeLigero);
-contextBlindaje.Ejecutar();
-// MOVILIDAD
-IMovilidad enReposo = new EnReposo();
-IMovilidad aPie = new APie();
-IMovilidad aTraccionOruga = new ATraccionOruga();
-IMovilidad conRuedas = new ConRuedas();
-IContextMovilidad contextMovilidad = new ContextMovilidad();
-contextMovilidad.EstablecerMovilidad(aPie);
-contextMovilidad.Ejecutar();
-
 fabrica.validador = validador;
 var entrada = "";
+var entradaBlindaje = "";
+var entradaMovilidad = "";
 
 while (entrada.ToUpper() != "X")
 {
-    entrada = menu.MostrarOpciones();
+    entrada = menu.mostrarOpciones();
     switch (entrada)
     {
         case "1":
             introducir(
+            introducirBlindaje(),
+            introducirMovilidad(),
             introducirCapacidadDestruccion(),
             introducirCapacidadMovimiento(),
             introducirPotenciaFuego(),
@@ -42,6 +29,8 @@ while (entrada.ToUpper() != "X")
     }// fin del switch
 }// fin del while
 void introducir(
+    IBlindaje blindaje,
+    IMovilidad movilidad,
     double capacidadDestruccion,
     double capacidadMovimiento, 
     double potenciaFuego, 
@@ -49,6 +38,8 @@ void introducir(
     double velocidad)
 {
     IUnidad unidad = fabrica.ingresarUnidad(
+        blindaje,
+        movilidad,
         capacidadDestruccion, 
         capacidadMovimiento, 
         potenciaFuego, 
@@ -64,6 +55,66 @@ void introducir(
         Console.WriteLine($"ERROR en la creación de la unidad");
     }// fin del else
 }// fin de ingresar
+string introducirBlindaje()
+{
+    entradaBlindaje = menu.mostrarBlindajes();
+    IContextBlindaje contextBlindaje = new ContextBlindaje();
+    
+    IBlindaje noBlindado = new NoBlindado();
+    IBlindaje blindajeLigero = new BlindajeLigero();
+    IBlindaje blindajePesado = new BlindajePesado();
+    IBlindaje blindajeContrachapado = new BlindajeContrachapado();
+
+    switch (entradaBlindaje)
+    {
+        case "1":
+            contextBlindaje.EstablecerBlindaje(noBlindado);
+            return contextBlindaje.Ejecutar();
+            break;
+        case "2":
+            contextBlindaje.EstablecerBlindaje(blindajeLigero);
+            return contextBlindaje.Ejecutar();
+            break;
+        case "3":
+            contextBlindaje.EstablecerBlindaje(blindajePesado);
+            return contextBlindaje.Ejecutar();
+            break;
+        case "4":
+            contextBlindaje.EstablecerBlindaje(blindajeContrachapado);
+            return contextBlindaje.Ejecutar();
+            break;
+        default: return null;
+    }// fin del switch
+}
+string introducirMovilidad()
+{
+    IMovilidad enReposo = new EnReposo();
+    IMovilidad aPie = new APie();
+    IMovilidad aTraccionOruga = new ATraccionOruga();
+    IMovilidad conRuedas = new ConRuedas();
+    IContextMovilidad contextMovilidad = new ContextMovilidad();
+    entradaMovilidad = menu.mostrarMovilidad();
+    switch (entradaMovilidad)
+    {
+        case "1":
+            contextMovilidad.EstablecerMovilidad(enReposo);
+            return contextMovilidad.Ejecutar();
+            break;
+        case "2":
+            contextMovilidad.EstablecerMovilidad(aPie);
+            return contextMovilidad.Ejecutar();
+            break;
+        case "3":
+            contextMovilidad.EstablecerMovilidad(aTraccionOruga);
+            return contextMovilidad.Ejecutar();
+            break;
+        case "4":
+            contextMovilidad.EstablecerMovilidad(conRuedas);
+            return contextMovilidad.Ejecutar();
+            break;
+        default: return null;
+    }// fin del switch
+}
 double introducirCapacidadDestruccion()
 {
     Console.WriteLine("Introduzca la capacidad de destrucción: ");

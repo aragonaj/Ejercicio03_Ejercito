@@ -10,6 +10,6 @@ namespace EjercicioEjercito.Ejercito.Blindaje
     {
         public IBlindaje blindaje { get; set; }
         public IBlindaje EstablecerBlindaje(IBlindaje blindaje);
-        public void Ejecutar();
+        public string Ejecutar();
     }
 }
